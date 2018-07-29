@@ -9,8 +9,10 @@ bot.on("ready", function(){
     console.log("Le Bot est bien connecté !");
 });
 bot.on('message',message => {
-    if(message.content[0] === '§salut') {
-        message.channel.send('Salut ! Comment ça va ?');
+    if(message.content[0] === PREFIX) {
+        if(message.content === '§Salut') {
+            message.channel.send('Salut ! Comment ça va ?');
+        }
     }
 });
 
