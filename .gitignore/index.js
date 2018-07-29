@@ -10,7 +10,8 @@ bot.on("ready", function(){
 });
 bot.on('message',message => {
     if(message.content[0] === PREFIX) {
-        if(message.content === '§Salut') {
+        if(message.content === '§Salut')
+        if(message.content === '§salut') {
             message.channel.send('Salut ! Comment ça va ?');
         }
     }
