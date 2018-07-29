@@ -18,7 +18,7 @@ bot.on('message',message => {
 
 bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
-        return channel.send("Salut ! Je me présente SkryptiBot, d'abord, Bienvenue ! Si tu as besoin d'aide n'hésite pas à faire §help dans un salon du Discord :)")
+        return channel.send("Salut ! Je me présente SkryptiBot, d'abord, Bienvenue ! Si tu as besoin d'aide n'hésite pas à faire §help dans un salon du Discord :) J'espère que tu resteras avec nous " + member.displayName + "!")
     })
 })
 
