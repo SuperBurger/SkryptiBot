@@ -16,4 +16,10 @@ bot.on('message',message => {
     }
 });
 
+bot.on('guildMemberAdd', member => {
+    member.createDM().then(channel => {
+        return channel.send("Salut ! Je me présente SkryptiBot, d'abord, Bienvenue ! Si tu as besoin d'aide n'hésite pas à faire §help dans un salon du Discord :)")
+    })
+})
+
 bot.login("NDczMDI4ODg2NjcwODY4NDgx.Dj8AEQ.dTEdp2fvEarMUlYKzR61TwPeTY0");
