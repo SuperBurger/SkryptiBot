@@ -20,10 +20,6 @@ bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
         return channel.send("Salut ! Je me présente SkryptiBot, d'abord, Bienvenue ! Si tu as besoin d'aide n'hésite pas à faire §help dans un salon du Discord :) J'espère que tu resteras avec nous " + member.displayName + " !")
     })
- bot.on('guildMemberRemove', member => {
-       member.createDM().then(channel => {
-          return channel.send("Aurevoir" + member.displayName + "Je pensais qu'on était Amis tout les deux ;(")
-     })
 })
 
 bot.login("NDczMDI4ODg2NjcwODY4NDgx.Dj8AEQ.dTEdp2fvEarMUlYKzR61TwPeTY0");
